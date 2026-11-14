@@ -1,0 +1,38 @@
+{
+  "A": {
+    "N": 5,
+    "hit1": 3,
+    "hit3": 3,
+    "filter_questions": 2,
+    "filter_respected": 1,
+    "by_type": {
+      "condition": "2/2",
+      "filter": "1/2",
+      "paraphrase": "0/1"
+    }
+  },
+  "B": {
+    "N": 5,
+    "hit1": 3,
+    "hit3": 4,
+    "filter_questions": 2,
+    "filter_respected": 1,
+    "by_type": {
+      "condition": "2/2",
+      "filter": "2/2",
+      "paraphrase": "0/1"
+    }
+  },
+  "C": {
+    "N": 5,
+    "hit1": 4,
+    "hit3": 4,
+    "filter_questions": 2,
+    "filter_respected": 2,
+    "by_type": {
+      "condition": "2/2",
+      "filter": "2/2",
+      "paraphrase": "0/1"
+    }
+  }
+}

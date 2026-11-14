@@ -1,0 +1,49 @@
+{
+  "run_at": "2026-11-13T18:41:28",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "max_seq_length": 128,
+  "pages_total": 43,
+  "content_pages": 41,
+  "skipped_pages": {
+    "30": "empty",
+    "34": "empty"
+  },
+  "cost_usd": 0,
+  "indexes": {
+    "A": {
+      "chunks": 307,
+      "embedded_this_run": 0,
+      "deleted_obsolete": 0,
+      "rows_in_db": 307,
+      "distinct_ids_in_db": 307,
+      "duplicates": 0,
+      "chars_min": 52,
+      "chars_median": 500,
+      "chars_max": 500,
+      "chars_total": 143500,
+      "tokens_median": 109,
+      "tokens_max": 172,
+      "chunks_truncated_by_model": 8,
+      "seconds_embed": 0.0,
+      "seconds_total": 0.14
+    },
+    "B": {
+      "chunks": 356,
+      "embedded_this_run": 0,
+      "deleted_obsolete": 0,
+      "rows_in_db": 356,
+      "distinct_ids_in_db": 356,
+      "duplicates": 0,
+      "chars_min": 13,
+      "chars_median": 391.0,
+      "chars_max": 500,
+      "chars_total": 129971,
+      "tokens_median": 86.5,
+      "tokens_max": 149,
+      "chunks_truncated_by_model": 6,
+      "seconds_embed": 0.0,
+      "seconds_total": 0.09
+    }
+  }
+}

@@ -1,0 +1,16 @@
+strategy,id,type,filter_applied,gold_page,alt_gold_page,hit1,hit3,first_hit_rank,top_pages,gold_page_in_top3_without_full_evidence,evidence_split_across_chunks,filter_respected,top_chunk_ids
+A,q04,condition,,25,,1,1,1,25 25 27,0,0,,pom-ch01-02-p25-f01 pom-ch01-02-p25-f00 pom-ch01-02-p27-f01
+A,q08,filter,,23,,1,1,1,23 27 46,0,0,0,pom-ch01-02-p23-f02 pom-ch01-02-p27-f02 pom-ch01-02-p46-f02
+A,q12,condition,,40,,1,1,1,40 40 54,0,0,,pom-ch01-02-p40-f04 pom-ch01-02-p40-f02 pom-ch01-02-p54-f04
+A,q16,paraphrase,,44,59,0,0,,60 38 54,0,0,,pom-ch01-02-p60-f04 pom-ch01-02-p38-f01 pom-ch01-02-p54-f01
+A,q20,filter,,57,59,0,0,,57 57 61,1,0,1,pom-ch01-02-p57-f02 pom-ch01-02-p57-f01 pom-ch01-02-p61-f00
+B,q04,condition,,25,,1,1,1,25 27 25,0,0,,pom-ch01-02-p25-p02 pom-ch01-02-p27-p02 pom-ch01-02-p25-p00
+B,q08,filter,,23,,0,1,2,46 23 31,0,0,0,pom-ch01-02-p46-p03 pom-ch01-02-p23-p02 pom-ch01-02-p31-p04
+B,q12,condition,,40,,1,1,1,40 60 40,0,0,,pom-ch01-02-p40-p04 pom-ch01-02-p60-p01 pom-ch01-02-p40-p02
+B,q16,paraphrase,,44,59,0,0,,54 54 44,1,0,,pom-ch01-02-p54-p09 pom-ch01-02-p54-p01 pom-ch01-02-p44-p03
+B,q20,filter,,57,59,1,1,1,59 57 61,0,0,1,pom-ch01-02-p59-p02 pom-ch01-02-p57-p01 pom-ch01-02-p61-p00
+C,q04,condition,,25,,1,1,1,25 27 25,0,0,,pom-ch01-02-p25-p02 pom-ch01-02-p27-p02 pom-ch01-02-p25-p00
+C,q08,filter,"{""chapter"": 1}",23,,1,1,1,23 31 27,0,0,1,pom-ch01-02-p23-p02 pom-ch01-02-p31-p04 pom-ch01-02-p27-p04
+C,q12,condition,,40,,1,1,1,40 60 40,0,0,,pom-ch01-02-p40-p04 pom-ch01-02-p60-p01 pom-ch01-02-p40-p02
+C,q16,paraphrase,,44,59,0,0,,54 54 44,1,0,,pom-ch01-02-p54-p09 pom-ch01-02-p54-p01 pom-ch01-02-p44-p03
+C,q20,filter,"{""chapter"": 2}",57,59,1,1,1,59 57 61,0,0,1,pom-ch01-02-p59-p02 pom-ch01-02-p57-p01 pom-ch01-02-p61-p00

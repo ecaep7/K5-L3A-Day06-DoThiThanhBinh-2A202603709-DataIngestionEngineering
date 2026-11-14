@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,"fixed_size (cửa sổ ký tự, trong từng trang)",500,50,"document_id, source, page, chapter, printed_page, char_start, char_end",không,"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (local, 384 chiều); pgvector, cosine","Baseline. Cắt cứng có thể cắt giữa từ/câu và tách evidence qua 2 chunk, nên coherence và Hit@1 thấp hơn B",,,,,"307 chunk, trung vị 500 ký tự"
+B,by_paragraph (tiêu đề gắn vào đoạn sau; gom đoạn; đoạn dài cắt ở cuối câu),500 (tối đa),0,"document_id, source, page, chapter, printed_page, char_start, char_end",không,"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (local, 384 chiều); pgvector, cosine",Ranh giới theo đoạn/câu giữ trọn ý nên coherence cao hơn A và Evidence Hit@3 >= A,,,,,"356 chunk, trung vị 391 ký tự. Giữ giới hạn 500 như A vì model chỉ đọc ~128 token đầu"
+C,giống B,500 (tối đa),0,"document_id, source, page, chapter, printed_page, char_start, char_end","chapter = filter_chapter, chỉ áp dụng cho câu có filter (q07, q08, q18, q20); câu khác chạy không lọc","sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (local, 384 chiều); pgvector, cosine","Giống hệt B ở câu không filter; ở câu filter, loại chunk của chương còn lại nên Hit tăng hoặc giữ nguyên",,,,,Khác B duy nhất ở điều kiện lọc metadata trong truy vấn
